@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Start app
 
-Things you may want to cover:
+run `rails server`
 
-* Ruby version
+### Generate files cli
 
-* System dependencies
+- example run `rails generate scaffold Article title:string description:text`
+- migrate db `rails db:migrate`
 
-* Configuration
+### Command to see routes presented in a viewer-friendly way:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run `rails routes --expanded`
