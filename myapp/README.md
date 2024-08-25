@@ -18,3 +18,9 @@ run `rails server`
 ### Command to see routes presented in a viewer-friendly way:
 
 run `rails routes --expanded`
+
+### Rails console
+
+- start console `rails c` or `rails console`
+- save data to db `save`
+- exit console `exit` or `exit!`
