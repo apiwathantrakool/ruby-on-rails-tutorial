@@ -14,4 +14,15 @@
     <%= article.description %>
   </p>
 
+  <p>
+    <strong>Created at:</strong>
+    <%= time_ago_in_words(article.created_at) %> ago
+  </p>
+
+
+  <p>
+    <strong>Updated at:</strong>
+    <%= time_ago_in_words(article.updated_at) %> ago
+  </p>
+
 </div>
