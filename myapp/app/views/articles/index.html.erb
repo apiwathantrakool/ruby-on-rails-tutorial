@@ -9,6 +9,8 @@
       <th scope="col">Title</th>
       <th scope="col">Sub Title</th>
       <th scope="col">Description</th>
+      <th scope="col">Created at</th>
+      <th scope="col">Updated at</th>
       <th scope="col">Actions</th>
     </tr>
   </thead>
@@ -19,6 +21,8 @@
         <td><%= article.title %></td>
         <td><%= article.sub_title %></td>
         <td><%= article.description %></td>
+        <td><%= time_ago_in_words(article.created_at) %> ago</td>
+        <td><%= time_ago_in_words(article.updated_at) %> ago</td>
         <td>
           <div class="d-inline-flex gap-1">
             <%= link_to 'Show', article_path(article), class: 'btn btn-primary' %>
